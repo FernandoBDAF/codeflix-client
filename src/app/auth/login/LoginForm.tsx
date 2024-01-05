@@ -41,5 +41,10 @@ export default function LoginForm() {
     // return (
     //     <AuthForm formType="login" onSubmit={handleSubmit} />
     // );
-    return (<h1>Login Form</h1>)
+    const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        alert("Submitted from Login");
+        e.preventDefault();
+    };
+
+    return (<AuthForm formType="login" onSubmit={onSubmit} />)
 }
