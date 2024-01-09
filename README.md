@@ -3,7 +3,7 @@ I am working in this project by following a course from "fullcycle.com.br" with 
 
 Check the result here: https://codeflix-client-jet.vercel.app/
 
-<img src="pulpfiction.jpeg" width="350"/>
+<img src="/public/pulpfiction.jpeg" width="350"/>
 
 The next steps are:
 - 
