@@ -10,7 +10,9 @@ type ServerError = {
 
 export default function LoginForm() {
     const [errors, setErrors] = useState<string[]>([]);
-    // const router = useRouter();
+    const router = useRouter();
+
+    console.log(errors)
 
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         
@@ -20,41 +22,33 @@ export default function LoginForm() {
         const email = formData.get("email");
         const password = formData.get("password");
 
+        
+
         try {
-            const response = await fetch("/api/auth/login/api", {
+            const response = await fetch("/api/auth/login", {
                 method: "POST",
                 headers: {"Content-Type": "application/json"},
                 body: JSON.stringify({ email, password }),
             });
+            console.log(JSON.stringify({ email, password }))
+            console.log(typeof response)
+            console.log(response)
 
             if (response.ok) {
-                // router.push("/");
-                // return;
+                router.push("/");
+                return;
             }
 
             const payload: ServerError[] = await response.json();
             setErrors(payload.map((error) => error.message));
         } catch (error) {
+            console.log("hi")
+            console.log(error)
+            console.log(errors)
             console.error(error);
             setErrors(["An unknown error occurred."]);
         }
     }
-
-    //         const payload: ServerError[] = await response.json();
-    //         setErrors(payload.map((error) => error.message));
-    //     }   catch (error) {
-    //             console.error(error);
-    //             setErrors(["An unknown error occurred."]);
-    //         }
-    //     }
-
-    // return (
-    //     <AuthForm formType="login" onSubmit={handleSubmit} />
-    // );
-    // const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    //     alert("Submitted from Login");
-    //     e.preventDefault();
-    // };
 
     return (<AuthForm formType="login" onSubmit={handleSubmit} />)
 }
