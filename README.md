@@ -1,8 +1,12 @@
 # Codeflix-client
 I am working in this project by following a course from "fullcycle.com.br" with changes. The idea is to build a clone of Netflix which I am doing by using different images and changing the content.
+
 <a href="https://codeflix-client-jet.vercel.app/">Check the result here</a>
+
 <img src="/public/pulpfiction.jpeg" width:"350"/>
+
 The next steps are:
+
 <ul>
     <li></li>
 </ul>
