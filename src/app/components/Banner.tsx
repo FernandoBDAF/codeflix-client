@@ -13,7 +13,7 @@ export const Banner = () => (
           className='h-[65vh} object-cover object-top lg:h-[95vh]' />
       </div>
       <h1 className='text-2xl font-bold md:text-4xl lg:text-7xl '>
-        Pulp Fiction
+        Pulp Fiction!
       </h1>
       <p className='text-shadow-md max-w-xs text-xs md:max-w-lg md:text-lg lg:max-w-2xl'>
         The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.
