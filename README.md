@@ -1,9 +1,9 @@
 # Codeflix-client
+<img src="/public/pulpfiction.jpeg" width="100"/>
+
 I am working in this project by following a course from "fullcycle.com.br" with changes. The idea is to build a clone of Netflix which I am doing by using different images and changing the content.
 
 [Check the result here](https://codeflix-client-jet.vercel.app/)
-
-<img src="/public/pulpfiction.jpeg" width="100"/>
 
 The next steps are:
 - 
